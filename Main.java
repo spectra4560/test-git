@@ -1,3 +1,6 @@
+// vadim koltanyok
+// 315433201
+
 package avoda1;
 
 public class Main {
