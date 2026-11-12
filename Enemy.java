@@ -1,20 +1,29 @@
+// vadim koltanyok
+// 315433201
+
+package avoda1;
+
 
 public class Enemy extends Character {
-private String name;
-private int health;
-private int level;
+	private int damage;
 
-public Enemy(String name,int health,int damage) {
-	super(name,health,level);
-	this.damage = damage;
-}
-public int getDamage(){
-	return damage;
-}
-public String toString() {
-	return super.toString()
-		Damage + damage"/n";
-
-}
-
+	//Done
+	public Enemy(String name, int health, int level, int damage) {
+		super(name, health, level);
+		if(damage <=5 && damage >0) {
+			this.damage = damage;
+		}else {
+			this.damage = 0;
+		}
+	}
+	//Done
+	public int getDamage(){
+		return damage;
+	}
+	//Done
+	public String toString() {
+		String returnString = super.toString();
+		returnString += "Damage: " + damage + "\n";
+		return returnString;
+	}
 }

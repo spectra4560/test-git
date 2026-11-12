@@ -1,6 +1,9 @@
+// vadim koltanyok
+// 315433201
+
 package avoda1;
 
-public class Character {
+public class Character{
 	private String name;
 	private int health;
 	private int level;
